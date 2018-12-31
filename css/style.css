@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
-
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Lato");
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; /* para entender ver http://sergiolopes.org/css-box-sizing-border-box/*/
+  box-sizing: border-box;
+  /* para entender ver http://sergiolopes.org/css-box-sizing-border-box/*/
   vertical-align: baseline;
   list-style: none;
-  border: 0;
-}
+  border: 0; }
 
 html {
   background-color: #fff;
@@ -15,16 +15,42 @@ html {
   font-family: 'Lato', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 20px;
-  text-rendering: optimizeLegibility;
-}
+  text-rendering: optimizeLegibility; }
 
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.7;
-  color: #777;
-}
+  color: #777; }
+
+.box {
+  padding: 1%; }
+
+.row {
+  max-width: 1140px;
+  /* limita a tela em um tamanho que coloca espaços nas laterais*/
+  margin: auto; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  80% {
+    transform: translate(10px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  80% {
+    transform: translate(-10px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
 
 /*------------------------------------------------*/
 /* HEADER */
@@ -34,43 +60,32 @@ body {
   background-size: cover;
   color: #777;
   width: 100%;
-  height: 80vh;
-}
-
-.nav img {
-  margin-left: 60px;
-}
+  height: 100vh; }
 
 /*menus*/
 .nav {
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
+  .nav img {
+    margin-left: 60px; }
 
 .menu-links,
 .social-links {
   margin-top: 40px;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 .head ul li {
   display: inline-block;
   margin-left: 30px;
-  float: right;
-}
-
-.head ul li a {
-  color: #909090e8;
-  text-decoration: none;
-}
-
-.head ul li a:hover {
-  color: #dededee8;
-}
+  float: right; }
+  .head ul li a {
+    color: #909090e8;
+    text-decoration: none; }
+    .head ul li a :hover {
+      color: #dededee8; }
 
 .social-links {
-  margin-left:  150px;
-}
+  margin-left: 150px; }
 
 /*-------------------------------------------------*/
 .heading-priary-main {
@@ -81,8 +96,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
   word-spacing: 4px;
-  animation: moveInLeft 3s;
-}
+  animation: moveInLeft 3s; }
 
 .heading-priary-sub {
   position: absolute;
@@ -92,8 +106,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
   word-spacing: 4px;
-  animation: moveInRight 3s;
-}
+  animation: moveInRight 3s; }
 
 .heading-priary-sub1 {
   position: absolute;
@@ -103,137 +116,111 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
   word-spacing: 4px;
-  animation: moveInRight 3s;
-}
-
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-
-  80% {
-    transform: translate(10px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(100px);
-  }
-
-  80% {
-    transform: translate(-10px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
+  animation: moveInRight 3s; }
 
 .head-contact {
   position: absolute;
   bottom: 150px;
   right: 20px;
-  text-align: center;
-}
-
-.head-contact h3 {
-  margin-bottom: 0;
-}
-
-.head-contact p {
-  color: #e67e22;
-  font-size: 50%;
-}
+  text-align: center; }
+  .head-contact h3 {
+    margin-bottom: 0; }
+  .head-contact p {
+    color: #e67e22;
+    font-size: 50%; }
 
 /*------------------------------------------------*/
-section {
-  padding: 30px 0;
-}
+/* FOOTER */
+/*-------------------------------------------------*/
+.footer-nav {
+  list-style: none;
+  float: left; }
 
-.box {
-  padding: 1%;
-}
+.footer-nav li a {
+  color: #e67e22;
+  padding-right: 20px; }
 
-.row {
-  max-width: 1140px; /* limita a tela em um tamanho que coloca espaços nas laterais*/
-  margin: auto;
-}
+.footer-nav li {
+  display: inline-block;
+  margin-right: 20px; }
+
+.footer-nav li {
+  margin-right: 0; }
+
+.footer-nav li a:link,
+.footer-nav li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+  transition: 0.2s; }
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: #ddd; }
+
+footer {
+  background-color: #333;
+  padding: 10px;
+  height: 100px;
+  font-size: 80%; }
+
+footer p {
+  color: #888;
+  text-align: center;
+  padding-top: 10px; }
 
 /*------------------------------------------------*/
 /* PLANOS */
 /*-------------------------------------------------*/
-
 .section-plans {
-  background-color: #f4f4f4;
-}
+  background-color: #f4f4f4; }
 
 .plan-box {
   background-color: #fff;
   border-radius: 5px;
   width: 90%;
   margin-left: 5%;
-  box-shadow: 0 2px 2px #efefef;
-}
+  box-shadow: 0 2px 2px #efefef; }
 
 .plan-box div {
   padding: 15px;
-  border-bottom: 1px solid #e8e8e8;
-}
+  border-bottom: 1px solid #e8e8e8; }
 
 .plan-box div:first-child {
   background-color: #fcfcfc;
   border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
+  border-top-right-radius: 5px; }
 
 .plan-box div:last-child {
   text-align: center;
-  border: 0;
-}
+  border: 0; }
 
 .plan-price {
   font-size: 300%;
   margin-bottom: 10px;
   font-weight: 100;
-  color: #e67e22;
-}
+  color: #e67e22; }
 
 .plan-price span {
   font-size: 30%;
-  font-weight: 300;
-}
+  font-weight: 300; }
 
 .plan-price-meal {
-  font-size: 80%;
-}
+  font-size: 80%; }
 
 .plan-box ul {
-  list-style: none;
-}
-
+  list-style: none; }
 
 .plan-box ul li {
   padding: 5px 0;
-  text-align: left;
-}
+  text-align: left; }
 
 .plan-box ul li ion-icon {
-  padding-right: 10px;
-}
+  padding-right: 10px; }
 
 h1, h2, h3 {
   font-weight: 300;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 h1 {
   margin-top: 0;
@@ -241,21 +228,18 @@ h1 {
   color: #fff;
   font-size: 240%;
   word-spacing: 4px;
-  letter-spacing: 1px;
-}
+  letter-spacing: 1px; }
 
 h2 {
   font-size: 180%;
   word-spacing: 2px;
   text-align: center;
   margin-bottom: 30px;
-  letter-spacing: 1px;
-}
+  letter-spacing: 1px; }
 
 h3 {
   font-size: 110%;
-  margin-bottom: 15px;
-}
+  margin-bottom: 15px; }
 
 h2:after {
   display: block;
@@ -264,8 +248,7 @@ h2:after {
   content: " ";
   width: 100px;
   margin: 0 auto;
-  margin-top: 30px;  
-}
+  margin-top: 30px; }
 
 /*------------------------------------------------*/
 /* CIDADES */
@@ -273,8 +256,7 @@ h2:after {
 .box img {
   width: 100%;
   height: auto;
-  margin-bottom: 15px;
-}
+  margin-bottom: 15px; }
 
 .icon-small {
   display: inline-block;
@@ -286,8 +268,7 @@ h2:after {
   /* segredo para alinhar texto e icon*/
   line-height: 120%;
   vertical-align: middle;
-  margin-top: -2px;
-}
+  margin-top: -2px; }
 
 a:link,
 a:visited {
@@ -295,14 +276,12 @@ a:visited {
   text-decoration: none;
   padding-bottom: 1px;
   border-bottom: 1px solid transparent;
-  transition: border-bottom 0.2s, color 0.2s;
-}
+  transition: border-bottom 0.2s, color 0.2s; }
 
 a:hover,
 a:active {
   color: #e67e22;
-  border-bottom: 1px solid #e67e22;
-}
+  border-bottom: 1px solid #e67e22; }
 
 /*------------------------------------------------*/
 /* TESTEMUNHOS */
@@ -310,17 +289,15 @@ a:active {
 .section-testimonials {
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/testemunho-background.jpg);
   background-size: cover;
-  color: rgb(204, 202, 202);
-  background-attachment: fixed;
-}
+  color: #cccaca;
+  background-attachment: fixed; }
 
 blockquote {
   padding: 2%;
   font-style: italic;
   line-height: 145%;
   position: relative;
-  margin-top: 40px;
-}
+  margin-top: 40px; }
 
 blockquote:before {
   content: "\201C";
@@ -328,66 +305,18 @@ blockquote:before {
   display: block;
   position: absolute;
   top: -5px;
-  left: -5px;
-}
+  left: -5px; }
 
 cite {
   font-size: 90%;
   margin-top: 25px;
-  display: block;
-}
+  display: block; }
 
 cite img {
   height: 45px;
   border-radius: 50%;
   margin-right: 10px;
-  vertical-align: middle;
-}
+  vertical-align: middle; }
 
-/*------------------------------------------------*/
-/* FOOTER */
-/*-------------------------------------------------*/
-.footer-nav {
-  list-style: none;
-  float: left;
-}
-
-.footer-nav li a {
-  color: #e67e22;
-  padding-right: 20px; 
-}
-
-.footer-nav li{
-  display: inline-block;
-  margin-right: 20px;
-}
-
-.footer-nav li{
-  margin-right: 0;
-}
-
-.footer-nav li a:link,
-.footer-nav li a:visited {
-  text-decoration: none;
-  border: 0;
-  color: #888;
-  transition: 0.2s;
-}
-
-.footer-nav li a:hover,
-.footer-nav li a:active {
-  color: #ddd;
-}
-
-footer {
-  background-color: #333;
-  padding: 10px;
-  height: 100px;
-  font-size: 80%;
-}
-
-footer p {
-  color: #888;
-  text-align: center;
-  padding-top: 10px;
-}
+section {
+  padding: 30px 0; }
