@@ -254,7 +254,7 @@ footer p {
 /* TESTEMUNHOS */
 /*-------------------------------------------------*/
 .section-testimonials {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/testemunho-background.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(./assets/img/testemunho-background.jpg);
   background-size: cover;
   color: #cccaca;
   background-attachment: fixed;
@@ -295,17 +295,17 @@ cite img {
 }
 
 .carousel-image-1 {
-  background: url("../../img/image1.jpg");
+  background: url("./assets/img/image1.jpg");
   background-size: cover;
 }
 
 .carousel-image-2 {
-  background: url("../../img/image2.jpg");
+  background: url("./assets/img/image2.jpg");
   background-size: cover;
 }
 
 .carousel-image-3 {
-  background: url("../../img/image3.jpg");
+  background: url("./assets/img/image3.jpg");
   background-size: cover;
 }
 

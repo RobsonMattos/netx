@@ -1,22 +1,22 @@
 {
-  "name": "netx",
-  "version": "1.0.0",
-  "description": "Site da netx",
-  "main": "index.js",
-  "scripts": {
-    "compile:sass": "node-sass ./sass/main.scss  ./css/style.css -w"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/RobsonMattos/netx.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/RobsonMattos/netx/issues"
-  },
-  "homepage": "https://github.com/RobsonMattos/netx#readme",
-  "devDependencies": {
-    "node-sass": "^4.11.0"
-  }
+    "name": "netx",
+    "version": "1.0.0",
+    "description": "Site da netx",
+    "main": "index.js",
+    "scripts": {
+        "compile:sass": "node-sass ./sass/main.scss  ./css/style.css -w"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/RobsonMattos/netx.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/RobsonMattos/netx/issues"
+    },
+    "homepage": "https://github.com/RobsonMattos/netx#readme",
+    "devDependencies": {
+        "node-sass": "^4.11.0"
+    }
 }
